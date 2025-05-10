@@ -3,8 +3,9 @@
     <label for="selectAuto">Nuestros mejores Autos:</label>
     <select id="selectAuto" class="form-select" (change)="onSeleccionar($event)">
       <option value="">Seleccionar</option>
-       
-        <option value="test">Test Option</option>
+        @for(auto of autos; track auto){
+          <option [value]="auto">{{ auto }}</option>
+        }
   </select>
   </div>
 

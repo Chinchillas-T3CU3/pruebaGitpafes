@@ -11,7 +11,9 @@ export class P4barraComponent {
 
   @Output() autoSeleccionado = new EventEmitter<string>();
 
-
+  ngOnInit(){
+    console.log(this.autos);
+  }
 
   onSeleccionar(event: any) {
     this.autoSeleccionado.emit(event.target.value);

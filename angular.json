@@ -21,10 +21,14 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              
+                  {
+    "glob": "**/*",
+    "input": "public",
+    "output": "/assets/"
+  },
+                "src/assets"
+              
             ],
             "styles": [
               "src/styles.css"
@@ -45,7 +49,8 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/pruebaGitpafes/"
             },
             "development": {
               "optimization": false,
@@ -79,10 +84,10 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              
+                "src/favicon.ico",
+                "src/assets"
+              
             ],
             "styles": [
               "src/styles.css"
